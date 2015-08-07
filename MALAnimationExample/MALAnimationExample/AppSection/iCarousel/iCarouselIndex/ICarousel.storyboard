@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Icarousel View Controller-->
+        <scene sceneID="GW5-Wg-SDq">
+            <objects>
+                <viewController storyboardIdentifier="carousel" id="d86-rb-Bxc" customClass="IcarouselViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f3b-Cv-QVs"/>
+                        <viewControllerLayoutGuide type="bottom" id="teN-km-nhH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mk1-p8-rVH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vY8-y4-mrG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="d86-rb-Bxc" id="hS0-Za-6nd"/>
+                                    <outlet property="delegate" destination="d86-rb-Bxc" id="NI8-fk-ppN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vY8-y4-mrG" firstAttribute="leading" secondItem="Mk1-p8-rVH" secondAttribute="leading" id="B4Y-gY-PEc"/>
+                            <constraint firstAttribute="bottom" secondItem="vY8-y4-mrG" secondAttribute="bottom" id="GHz-oA-7Hm"/>
+                            <constraint firstAttribute="trailing" secondItem="vY8-y4-mrG" secondAttribute="trailing" id="eeT-oN-GpR"/>
+                            <constraint firstItem="vY8-y4-mrG" firstAttribute="top" secondItem="Mk1-p8-rVH" secondAttribute="top" id="q6q-cq-Qdf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="vY8-y4-mrG" id="uaJ-tV-PND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8G-0p-ZWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="-127"/>
+        </scene>
+        <!--Cylinder View Controller-->
+        <scene sceneID="PTA-yI-cth">
+            <objects>
+                <viewController storyboardIdentifier="Cylinder" id="K8K-vX-CZm" customClass="CylinderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P8G-p1-BNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTG-Rv-u1Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N0U-v1-mp9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPs-hf-fpV" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RTG-Rv-u1Q" firstAttribute="top" secondItem="KPs-hf-fpV" secondAttribute="bottom" id="JdM-Ya-7Do"/>
+                            <constraint firstAttribute="trailing" secondItem="KPs-hf-fpV" secondAttribute="trailing" id="agE-jC-B68"/>
+                            <constraint firstItem="KPs-hf-fpV" firstAttribute="leading" secondItem="N0U-v1-mp9" secondAttribute="leading" id="kI8-Kx-cPG"/>
+                            <constraint firstItem="KPs-hf-fpV" firstAttribute="top" secondItem="P8G-p1-BNd" secondAttribute="bottom" id="wvE-Ly-K0y"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="icarousel" destination="KPs-hf-fpV" id="b5r-Ql-e2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVK-5f-bv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="-127"/>
+        </scene>
+    </scenes>
+</document>

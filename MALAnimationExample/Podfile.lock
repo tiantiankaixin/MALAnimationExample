@@ -1,0 +1,19 @@
+PODS:
+  - GPUImage (0.1.6)
+  - iCarousel (1.8.1)
+  - pop (1.0.7)
+  - SOZOChromoplast (0.0.2)
+
+DEPENDENCIES:
+  - GPUImage (~> 0.1.6)
+  - iCarousel (~> 1.8.1)
+  - pop (~> 1.0.7)
+  - SOZOChromoplast (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  GPUImage: 4675ce4a5370ca92fcea8623b2a08b8f0c51b940
+  iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  SOZOChromoplast: a626464e4f31474dd5191ae55cffbab2a2feae52
+
+COCOAPODS: 0.37.2

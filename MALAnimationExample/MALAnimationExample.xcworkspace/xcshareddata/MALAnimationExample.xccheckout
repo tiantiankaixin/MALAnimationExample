@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B7E74D56-9E2F-4E4D-9FDD-8F51F72D73B7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MALAnimationExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9EEBF62E0F13A3E806866CEFD032E2E60E8F745D</key>
+		<string>https://github.com/tiantiankaixin/MALAnimationExample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MALAnimationExample/MALAnimationExample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9EEBF62E0F13A3E806866CEFD032E2E60E8F745D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tiantiankaixin/MALAnimationExample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9EEBF62E0F13A3E806866CEFD032E2E60E8F745D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9EEBF62E0F13A3E806866CEFD032E2E60E8F745D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AnimationExample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
