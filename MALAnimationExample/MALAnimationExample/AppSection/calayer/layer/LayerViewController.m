@@ -1,24 +1,24 @@
 //
-//  CalyerViewController.m
+//  LayerViewController.m
 //  MALAnimationExample
 //
-//  Created by wangtian on 15/8/3.
+//  Created by wangtian on 15/8/7.
 //  Copyright (c) 2015年 wangtian. All rights reserved.
 //
 
-#import "CalyerViewController.h"
+#import "LayerViewController.h"
 
-@interface CalyerViewController ()
+@interface LayerViewController ()
 
 @end
 
-@implementation CalyerViewController
+@implementation LayerViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self setUpView];
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view.
 }
 
 #pragma mark - 设置视图
@@ -46,5 +46,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

@@ -12,6 +12,7 @@
 		68084D581B6B4F6100D71C6E /* PFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68084D571B6B4F6100D71C6E /* PFromViewController.m */; };
 		68084D5B1B6B4F7200D71C6E /* PToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68084D5A1B6B4F7200D71C6E /* PToViewController.m */; };
 		68084D5E1B6B5BF400D71C6E /* DissmissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68084D5D1B6B5BF400D71C6E /* DissmissAnimation.m */; };
+		681B59AC1B7445C60012DA33 /* LayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B59AB1B7445C60012DA33 /* LayerViewController.m */; };
 		683E5B151B71D9E700943CC9 /* UIImage+MALImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 683E5B141B71D9E700943CC9 /* UIImage+MALImage.m */; };
 		683E5B191B71E78800943CC9 /* SinaPopDemoSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 683E5B171B71E78800943CC9 /* SinaPopDemoSubViewController.m */; };
 		683E5B1A1B71E78800943CC9 /* SinaPopDemoSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683E5B181B71E78800943CC9 /* SinaPopDemoSubViewController.xib */; };
@@ -22,8 +23,6 @@
 		68471DD91B706E22006B5A01 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68471DD81B706E22006B5A01 /* MenuItem.m */; };
 		68471DDC1B708486006B5A01 /* MenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68471DDB1B708486006B5A01 /* MenuItemModel.m */; };
 		68471DE51B70B522006B5A01 /* MenuItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68471DE41B70B522006B5A01 /* MenuItem.xib */; };
-		684A591E1B6F084300E3A75D /* CalyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A591C1B6F084300E3A75D /* CalyerViewController.m */; };
-		684A591F1B6F084300E3A75D /* CalyerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684A591D1B6F084300E3A75D /* CalyerViewController.xib */; };
 		684F4B891B69D147003A111E /* NSObject+FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F4B591B69D147003A111E /* NSObject+FileManager.m */; };
 		684F4B8A1B69D147003A111E /* NSObject+magic.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F4B5B1B69D147003A111E /* NSObject+magic.m */; };
 		684F4B8B1B69D147003A111E /* NSObject+MALRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F4B5D1B69D147003A111E /* NSObject+MALRunTime.m */; };
@@ -104,6 +103,8 @@
 		68084D5A1B6B4F7200D71C6E /* PToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PToViewController.m; sourceTree = "<group>"; };
 		68084D5C1B6B5BF400D71C6E /* DissmissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DissmissAnimation.h; sourceTree = "<group>"; };
 		68084D5D1B6B5BF400D71C6E /* DissmissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DissmissAnimation.m; sourceTree = "<group>"; };
+		681B59AA1B7445C60012DA33 /* LayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerViewController.h; sourceTree = "<group>"; };
+		681B59AB1B7445C60012DA33 /* LayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerViewController.m; sourceTree = "<group>"; };
 		683E5B131B71D9E700943CC9 /* UIImage+MALImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MALImage.h"; sourceTree = "<group>"; };
 		683E5B141B71D9E700943CC9 /* UIImage+MALImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MALImage.m"; sourceTree = "<group>"; };
 		683E5B161B71E78800943CC9 /* SinaPopDemoSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaPopDemoSubViewController.h; sourceTree = "<group>"; };
@@ -120,9 +121,6 @@
 		68471DDA1B708486006B5A01 /* MenuItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemModel.h; sourceTree = "<group>"; };
 		68471DDB1B708486006B5A01 /* MenuItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemModel.m; sourceTree = "<group>"; };
 		68471DE41B70B522006B5A01 /* MenuItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItem.xib; sourceTree = "<group>"; };
-		684A591B1B6F084300E3A75D /* CalyerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalyerViewController.h; sourceTree = "<group>"; };
-		684A591C1B6F084300E3A75D /* CalyerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalyerViewController.m; sourceTree = "<group>"; };
-		684A591D1B6F084300E3A75D /* CalyerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalyerViewController.xib; sourceTree = "<group>"; };
 		684F4B581B69D147003A111E /* NSObject+FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FileManager.h"; sourceTree = "<group>"; };
 		684F4B591B69D147003A111E /* NSObject+FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FileManager.m"; sourceTree = "<group>"; };
 		684F4B5A1B69D147003A111E /* NSObject+magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+magic.h"; sourceTree = "<group>"; };
@@ -261,6 +259,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		681B59A91B7445A90012DA33 /* layer */ = {
+			isa = PBXGroup;
+			children = (
+				681B59AA1B7445C60012DA33 /* LayerViewController.h */,
+				681B59AB1B7445C60012DA33 /* LayerViewController.m */,
+			);
+			path = layer;
+			sourceTree = "<group>";
+		};
 		68471DCC1B705EAF006B5A01 /* sinaPopView */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,9 +294,7 @@
 			children = (
 				68EAA8F11B732973005075AE /* calayerIndex */,
 				68EAA9001B732C38005075AE /* selectColor */,
-				684A591B1B6F084300E3A75D /* CalyerViewController.h */,
-				684A591C1B6F084300E3A75D /* CalyerViewController.m */,
-				684A591D1B6F084300E3A75D /* CalyerViewController.xib */,
+				681B59A91B7445A90012DA33 /* layer */,
 			);
 			path = calayer;
 			sourceTree = "<group>";
@@ -848,7 +853,6 @@
 				68471DD11B705FA0006B5A01 /* SinaPopViewDemoController.xib in Resources */,
 				684F4BCC1B6A0139003A111E /* ScalePopViewController.xib in Resources */,
 				68CB73EA1B14078300A84206 /* Images.xcassets in Resources */,
-				684A591F1B6F084300E3A75D /* CalyerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,7 +910,6 @@
 				684F4B901B69D147003A111E /* UIView+MALFrame.m in Sources */,
 				684F4B9A1B69D147003A111E /* MALTextView.m in Sources */,
 				6876C2BD1B72E746008C7BDE /* IcarouselViewController.m in Sources */,
-				684A591E1B6F084300E3A75D /* CalyerViewController.m in Sources */,
 				684F4BC41B6A0139003A111E /* PopIndexViewController.m in Sources */,
 				68084D5E1B6B5BF400D71C6E /* DissmissAnimation.m in Sources */,
 				686DFD3D1B6B16D400D31E1F /* PushCollectionViewCell.m in Sources */,
@@ -927,6 +930,7 @@
 				684F4B971B69D147003A111E /* PopFromBottom.m in Sources */,
 				68CB74251B14246400A84206 /* SImpleViewController.m in Sources */,
 				686DFD3E1B6B16D400D31E1F /* ToViewController.m in Sources */,
+				681B59AC1B7445C60012DA33 /* LayerViewController.m in Sources */,
 				68CB74281B1440AE00A84206 /* LabelScrollView.m in Sources */,
 				686DFD3C1B6B16D400D31E1F /* PushAnimation.m in Sources */,
 				684F4B991B69D147003A111E /* MALSegmentControl.m in Sources */,

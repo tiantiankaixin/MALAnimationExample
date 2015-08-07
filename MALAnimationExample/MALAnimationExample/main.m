@@ -9,8 +9,25 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
+void CrashHandlerExceptionHandler(NSException *exception)
+{
+    NSLog(@"%@",[exception callStackSymbols]);
+    CFRunLoopRef runLoop = CFRunLoopGetCurrent();
+    NSArray *allModes = CFBridgingRelease(CFRunLoopCopyAllModes(runLoop));
+    while (1)
+    {
+        for (NSString *mode in allModes)
+        {
+            CFRunLoopRunInMode((CFStringRef)mode, 0.0001, false);
+        }
+    }
+}
+
+int main(int argc, char * argv[])
+{
+    @autoreleasepool
+    {
+        NSSetUncaughtExceptionHandler (&CrashHandlerExceptionHandler);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

@@ -34,6 +34,7 @@
 - (void)configueDatasource
 {
     [self addARowWithClassName:@"selectColor" andTitle:@"提取图片上的颜色" storyBoardName:@"Calayer"];
+    [self addARowWithClassName:@"layer" andTitle:@"layer" storyBoardName:@"Calayer"];
 }
 
 - (void)didReceiveMemoryWarning
