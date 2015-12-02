@@ -10,6 +10,9 @@
 
 @interface LayerViewController ()
 
+@property (nonatomic, strong) CAShapeLayer *shapeLR;
+@property (nonatomic, strong) CABasicAnimation *basicA;
+
 @end
 
 @implementation LayerViewController
@@ -25,7 +28,8 @@
 - (void)setUpView
 {
     [self setCenterItemWithTitle:@"CALayer"];
-    [self gradLayer];
+    //[self gradLayer];
+    [self shapeLayer];
 }
 
 #pragma mark - 渐变layer
@@ -41,20 +45,36 @@
     [self.view.layer addSublayer:gradidentLayer];
 }
 
+- (void)shapeLayer
+{
+    CAShapeLayer *shape = [CAShapeLayer layer];
+    CGPathRef ref = [UIBezierPath bezierPathWithArcCenter:CGPointMake(50, 50 + 64) radius:50 startAngle:0 endAngle:M_PI * 2 clockwise:YES].CGPath;
+    [shape setPath:ref];
+    [self.view.layer addSublayer:shape];
+    self.shapeLR = shape;
+}
+
+#pragma mark - 开始动画
+- (IBAction)animationBtnClick:(UIButton *)sender
+{
+    CGFloat centerX = self.shapeLR.frame.origin.x + CGRectGetWidth(self.shapeLR.frame) / 2;
+    CGFloat centerY = self.shapeLR.frame.origin.y + CGRectGetHeight(self.shapeLR.frame) / 2 - 64;
+    //CGFloat radius = CGRectGetHeight(self.shapeLR.frame) / 2;
+    CGPathRef ref = [UIBezierPath bezierPathWithArcCenter:CGPointMake(centerX, centerY) radius:1000 startAngle:0 endAngle:M_PI * 2 clockwise:YES].CGPath;
+    CABasicAnimation *basic = [CABasicAnimation animationWithKeyPath:@"path"];
+    basic.toValue = (__bridge id _Nullable)(ref);
+    basic.duration = 10.0f;
+    basic.fillMode = kCAFillModeForwards;
+    basic.removedOnCompletion = NO;
+    [self.shapeLR addAnimation:basic forKey:@"pathAnimation"];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

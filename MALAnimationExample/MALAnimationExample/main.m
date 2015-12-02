@@ -21,6 +21,21 @@ void CrashHandlerExceptionHandler(NSException *exception)
             CFRunLoopRunInMode((CFStringRef)mode, 0.0001, false);
         }
     }
+//    NS_DURING
+//    //try 代码
+//    NS_HANDLER
+//    //catch
+//    NS_ENDHANDLER
+//    
+//    @try {
+//        
+//    }
+//    @catch (NSException *exception) {
+//        
+//    }
+//    @finally {
+//        
+//    }
 }
 
 int main(int argc, char * argv[])

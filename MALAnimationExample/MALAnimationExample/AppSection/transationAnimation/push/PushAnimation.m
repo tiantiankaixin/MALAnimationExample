@@ -41,14 +41,14 @@
         to.view.alpha = 1.0;
         iconSnap.frame = to.targetImageView.frame;
         
-    } completion:^(BOOL finished) {
+    } completion:^(BOOL finished){
         
         if (finished)
         {
             cell.icon.hidden = NO;
             to.targetImageView.image = cell.icon.image;
             [iconSnap removeFromSuperview];
-            [transitionContext completeTransition:YES];
+            [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         }
     }];
 }

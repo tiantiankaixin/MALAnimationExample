@@ -35,6 +35,7 @@
 {
     [self addARowWithClassName:@"selectColor" andTitle:@"提取图片上的颜色" storyBoardName:@"Calayer"];
     [self addARowWithClassName:@"layer" andTitle:@"layer" storyBoardName:@"Calayer"];
+    [self addARowWithClassName:@"CircleScaleViewController" andTitle:@"按钮点击出光圈" isFromSB:NO];
 }
 
 - (void)didReceiveMemoryWarning

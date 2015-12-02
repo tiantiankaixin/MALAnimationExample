@@ -52,6 +52,9 @@
 		684F4BCA1B6A0139003A111E /* PopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F4BBE1B6A0139003A111E /* PopDemoViewController.m */; };
 		684F4BCB1B6A0139003A111E /* ScalePopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F4BC01B6A0139003A111E /* ScalePopViewController.m */; };
 		684F4BCC1B6A0139003A111E /* ScalePopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684F4BC11B6A0139003A111E /* ScalePopViewController.xib */; };
+		6860B7A71C0EEB910016D3AE /* LayerBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860B7A61C0EEB910016D3AE /* LayerBtn.m */; };
+		6860B7AB1C0EED2D0016D3AE /* CircleScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860B7A91C0EED2D0016D3AE /* CircleScaleViewController.m */; };
+		6860B7AC1C0EED2D0016D3AE /* CircleScaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6860B7AA1C0EED2D0016D3AE /* CircleScaleViewController.xib */; };
 		686DFD3A1B6B16D400D31E1F /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686DFD301B6B16D400D31E1F /* FromViewController.m */; };
 		686DFD3B1B6B16D400D31E1F /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 686DFD321B6B16D400D31E1F /* PopAnimation.m */; };
 		686DFD3C1B6B16D400D31E1F /* PushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 686DFD341B6B16D400D31E1F /* PushAnimation.m */; };
@@ -178,6 +181,11 @@
 		684F4BBF1B6A0139003A111E /* ScalePopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalePopViewController.h; sourceTree = "<group>"; };
 		684F4BC01B6A0139003A111E /* ScalePopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalePopViewController.m; sourceTree = "<group>"; };
 		684F4BC11B6A0139003A111E /* ScalePopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScalePopViewController.xib; sourceTree = "<group>"; };
+		6860B7A51C0EEB910016D3AE /* LayerBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerBtn.h; sourceTree = "<group>"; };
+		6860B7A61C0EEB910016D3AE /* LayerBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerBtn.m; sourceTree = "<group>"; };
+		6860B7A81C0EED2D0016D3AE /* CircleScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleScaleViewController.h; sourceTree = "<group>"; };
+		6860B7A91C0EED2D0016D3AE /* CircleScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleScaleViewController.m; sourceTree = "<group>"; };
+		6860B7AA1C0EED2D0016D3AE /* CircleScaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleScaleViewController.xib; sourceTree = "<group>"; };
 		686DFD2F1B6B16D400D31E1F /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromViewController.h; sourceTree = "<group>"; };
 		686DFD301B6B16D400D31E1F /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromViewController.m; sourceTree = "<group>"; };
 		686DFD311B6B16D400D31E1F /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
@@ -293,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				68EAA8F11B732973005075AE /* calayerIndex */,
+				6860B7A41C0EEB910016D3AE /* circleScale */,
 				68EAA9001B732C38005075AE /* selectColor */,
 				681B59A91B7445A90012DA33 /* layer */,
 			);
@@ -506,6 +515,18 @@
 				686DFD2E1B6B16D400D31E1F /* push */,
 			);
 			path = transationAnimation;
+			sourceTree = "<group>";
+		};
+		6860B7A41C0EEB910016D3AE /* circleScale */ = {
+			isa = PBXGroup;
+			children = (
+				6860B7A51C0EEB910016D3AE /* LayerBtn.h */,
+				6860B7A61C0EEB910016D3AE /* LayerBtn.m */,
+				6860B7A81C0EED2D0016D3AE /* CircleScaleViewController.h */,
+				6860B7A91C0EED2D0016D3AE /* CircleScaleViewController.m */,
+				6860B7AA1C0EED2D0016D3AE /* CircleScaleViewController.xib */,
+			);
+			path = circleScale;
 			sourceTree = "<group>";
 		};
 		686DFD2E1B6B16D400D31E1F /* push */ = {
@@ -849,6 +870,7 @@
 				684F4BC51B6A0139003A111E /* PopIndexViewController.xib in Resources */,
 				68CB73ED1B14078300A84206 /* LaunchScreen.xib in Resources */,
 				683E5B1A1B71E78800943CC9 /* SinaPopDemoSubViewController.xib in Resources */,
+				6860B7AC1C0EED2D0016D3AE /* CircleScaleViewController.xib in Resources */,
 				68471DE51B70B522006B5A01 /* MenuItem.xib in Resources */,
 				68471DD11B705FA0006B5A01 /* SinaPopViewDemoController.xib in Resources */,
 				684F4BCC1B6A0139003A111E /* ScalePopViewController.xib in Resources */,
@@ -933,7 +955,9 @@
 				681B59AC1B7445C60012DA33 /* LayerViewController.m in Sources */,
 				68CB74281B1440AE00A84206 /* LabelScrollView.m in Sources */,
 				686DFD3C1B6B16D400D31E1F /* PushAnimation.m in Sources */,
+				6860B7A71C0EEB910016D3AE /* LayerBtn.m in Sources */,
 				684F4B991B69D147003A111E /* MALSegmentControl.m in Sources */,
+				6860B7AB1C0EED2D0016D3AE /* CircleScaleViewController.m in Sources */,
 				684F4BC81B6A0139003A111E /* MyScalePopViewController.m in Sources */,
 				68471DD51B706C83006B5A01 /* SinaPopViewController.m in Sources */,
 				68EAA9031B732C4E005075AE /* SelectorViewController.m in Sources */,

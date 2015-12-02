@@ -44,6 +44,10 @@
     {
         return [DissmissAnimation new];
     }
+    else
+    {
+        self.transitioningDelegate = nil;
+    }
     return nil;
 }
 
