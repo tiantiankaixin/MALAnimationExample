@@ -42,6 +42,7 @@
         
         if (finished)
         {
+            NSLog(@"------%@",from.view.superview);
             cell.icon.hidden = NO;
             [tempImage removeFromSuperview];
             from.targetImageView.hidden = NO;

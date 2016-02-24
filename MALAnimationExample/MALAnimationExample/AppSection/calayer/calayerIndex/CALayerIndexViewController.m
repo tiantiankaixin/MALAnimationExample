@@ -11,6 +11,7 @@
 @interface CALayerIndexViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation CALayerIndexViewController
@@ -36,6 +37,7 @@
     [self addARowWithClassName:@"selectColor" andTitle:@"提取图片上的颜色" storyBoardName:@"Calayer"];
     [self addARowWithClassName:@"layer" andTitle:@"layer" storyBoardName:@"Calayer"];
     [self addARowWithClassName:@"CircleScaleViewController" andTitle:@"按钮点击出光圈" isFromSB:NO];
+    [self addARowWithClassName:@"HULuWaViewController" andTitle:@"葫芦娃效果" isFromSB:NO];
 }
 
 - (void)didReceiveMemoryWarning

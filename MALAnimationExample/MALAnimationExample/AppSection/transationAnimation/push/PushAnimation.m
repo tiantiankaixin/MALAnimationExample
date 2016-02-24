@@ -45,6 +45,7 @@
         
         if (finished)
         {
+            NSLog(@"======%@",from.view.superview);
             cell.icon.hidden = NO;
             to.targetImageView.image = cell.icon.image;
             [iconSnap removeFromSuperview];

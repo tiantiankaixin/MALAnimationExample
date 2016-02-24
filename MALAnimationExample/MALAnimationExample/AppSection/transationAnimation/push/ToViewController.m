@@ -94,12 +94,6 @@
     return nil;
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-
-    
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

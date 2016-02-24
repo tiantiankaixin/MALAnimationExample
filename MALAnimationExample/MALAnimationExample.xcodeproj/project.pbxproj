@@ -80,6 +80,8 @@
 		68CB74281B1440AE00A84206 /* LabelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB74271B1440AE00A84206 /* LabelScrollView.m */; };
 		68DF3F421B5C936800504335 /* ZheDieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF3F401B5C936800504335 /* ZheDieViewController.m */; };
 		68DF3F431B5C936800504335 /* ZheDieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF3F411B5C936800504335 /* ZheDieViewController.xib */; };
+		68E029C91C7D422B007635D1 /* HULuWaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E029C71C7D422B007635D1 /* HULuWaViewController.m */; };
+		68E029CA1C7D422B007635D1 /* HULuWaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68E029C81C7D422B007635D1 /* HULuWaViewController.xib */; };
 		68EAA8F61B73299D005075AE /* Calayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EAA8F51B73299D005075AE /* Calayer.storyboard */; };
 		68EAA8FF1B732BBA005075AE /* CALayerIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EAA8FE1B732BBA005075AE /* CALayerIndexViewController.m */; };
 		68EAA9031B732C4E005075AE /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EAA9021B732C4E005075AE /* SelectorViewController.m */; };
@@ -232,6 +234,9 @@
 		68DF3F3F1B5C936800504335 /* ZheDieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZheDieViewController.h; sourceTree = "<group>"; };
 		68DF3F401B5C936800504335 /* ZheDieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZheDieViewController.m; sourceTree = "<group>"; };
 		68DF3F411B5C936800504335 /* ZheDieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZheDieViewController.xib; sourceTree = "<group>"; };
+		68E029C61C7D422B007635D1 /* HULuWaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HULuWaViewController.h; sourceTree = "<group>"; };
+		68E029C71C7D422B007635D1 /* HULuWaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HULuWaViewController.m; sourceTree = "<group>"; };
+		68E029C81C7D422B007635D1 /* HULuWaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HULuWaViewController.xib; sourceTree = "<group>"; };
 		68EAA8F51B73299D005075AE /* Calayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calayer.storyboard; sourceTree = "<group>"; };
 		68EAA8FD1B732BBA005075AE /* CALayerIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerIndexViewController.h; sourceTree = "<group>"; };
 		68EAA8FE1B732BBA005075AE /* CALayerIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerIndexViewController.m; sourceTree = "<group>"; };
@@ -303,6 +308,7 @@
 				68EAA8F11B732973005075AE /* calayerIndex */,
 				6860B7A41C0EEB910016D3AE /* circleScale */,
 				68EAA9001B732C38005075AE /* selectColor */,
+				68E029C51C7D4210007635D1 /* huluwa */,
 				681B59A91B7445A90012DA33 /* layer */,
 			);
 			path = calayer;
@@ -602,8 +608,8 @@
 		68B4C8A81B3BE72A0062E164 /* popAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				684F4BAC1B6A0139003A111E /* popBasic */,
 				684F4BB01B6A0139003A111E /* popIndex */,
+				684F4BAC1B6A0139003A111E /* popBasic */,
 				684F4BB41B6A0139003A111E /* popView */,
 			);
 			path = popAnimation;
@@ -747,6 +753,16 @@
 			path = zhedie;
 			sourceTree = "<group>";
 		};
+		68E029C51C7D4210007635D1 /* huluwa */ = {
+			isa = PBXGroup;
+			children = (
+				68E029C61C7D422B007635D1 /* HULuWaViewController.h */,
+				68E029C71C7D422B007635D1 /* HULuWaViewController.m */,
+				68E029C81C7D422B007635D1 /* HULuWaViewController.xib */,
+			);
+			path = huluwa;
+			sourceTree = "<group>";
+		};
 		68EAA8F11B732973005075AE /* calayerIndex */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,6 +876,7 @@
 			files = (
 				684F4BC71B6A0139003A111E /* PopViewIndexViewController.xib in Resources */,
 				68EAA8F61B73299D005075AE /* Calayer.storyboard in Resources */,
+				68E029CA1C7D422B007635D1 /* HULuWaViewController.xib in Resources */,
 				684F4BC91B6A0139003A111E /* MyScalePopViewController.xib in Resources */,
 				6876C2BF1B72E771008C7BDE /* ICarousel.storyboard in Resources */,
 				684F4BC31B6A0139003A111E /* PopBasicViewController.xib in Resources */,
@@ -975,6 +992,7 @@
 				684F4BCA1B6A0139003A111E /* PopDemoViewController.m in Sources */,
 				68CB73DF1B14078300A84206 /* main.m in Sources */,
 				6876C2C31B72EF5F008C7BDE /* CylinderViewController.m in Sources */,
+				68E029C91C7D422B007635D1 /* HULuWaViewController.m in Sources */,
 				68CB741A1B140E5800A84206 /* MainMenuViewController.m in Sources */,
 				684F4B8F1B69D147003A111E /* UIColor+MALColor.m in Sources */,
 				684F4B981B69D147003A111E /* MALProgressView.m in Sources */,
