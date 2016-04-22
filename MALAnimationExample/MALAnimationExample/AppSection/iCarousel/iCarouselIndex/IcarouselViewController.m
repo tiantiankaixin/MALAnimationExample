@@ -9,6 +9,7 @@
 #import "IcarouselViewController.h"
 
 @interface IcarouselViewController ()
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -39,7 +39,7 @@
 - (void)setUpView
 {
     [self.icarousel setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]]];
-    self.icarousel.type = iCarouselTypeCylinder;
+    self.icarousel.type = iCarouselTypeCoverFlow;
     self.icarousel.dataSource = self;
     self.icarousel.delegate = self;
 }
@@ -73,13 +73,13 @@
     return imageView;
 }
 
-//- (CATransform3D)carousel:(__unused iCarousel *)carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform
-//{
-//    //implement 'flip3D' style carousel
-//    NSLog(@"%.2f",offset);
-//    //CATransform3D transform3d;
-//    return CATransform3DTranslate(transform, offset * self.icarousel.itemWidth / 3, 0, offset * self.icarousel.itemWidth / 4);
-//}
+- (CATransform3D)carousel:(__unused iCarousel *)carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform
+{
+    //implement 'flip3D' style carousel
+    NSLog(@"%.2f",offset);
+    //CATransform3D transform3d;
+    return CATransform3DTranslate(transform, offset * self.icarousel.itemWidth / 3, 0, offset * self.icarousel.itemWidth / 4);
+}
 
 //- (CGFloat)carousel:(__unused iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
 //{
@@ -98,7 +98,7 @@
 //        }
 //        case iCarouselOptionFadeMax:
 //        {
-//            if (self.carousel.type == iCarouselTypeCustom)
+//            if (self.icarousel.type == iCarouselTypeCustom)
 //            {
 //                //set opacity based on distance from camera
 //                return 0.0f;

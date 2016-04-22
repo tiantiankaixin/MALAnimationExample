@@ -62,6 +62,10 @@
 		686DFD3E1B6B16D400D31E1F /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686DFD381B6B16D400D31E1F /* ToViewController.m */; };
 		686DFD441B6B173600D31E1F /* TransationIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686DFD431B6B173600D31E1F /* TransationIndexViewController.m */; };
 		686DFD461B6B175000D31E1F /* TransationAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686DFD451B6B175000D31E1F /* TransationAnimation.storyboard */; };
+		68739C531CC9EB83009C6840 /* OtherAppEffectFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739C511CC9EB83009C6840 /* OtherAppEffectFollowViewController.m */; };
+		68739C541CC9EB83009C6840 /* OtherAppEffectFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68739C521CC9EB83009C6840 /* OtherAppEffectFollowViewController.xib */; };
+		68739C581CC9EBBC009C6840 /* JianShuEffectFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68739C561CC9EBBC009C6840 /* JianShuEffectFollowViewController.m */; };
+		68739C591CC9EBBC009C6840 /* JianShuEffectFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68739C571CC9EBBC009C6840 /* JianShuEffectFollowViewController.xib */; };
 		6876C2BD1B72E746008C7BDE /* IcarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6876C2BC1B72E746008C7BDE /* IcarouselViewController.m */; };
 		6876C2BF1B72E771008C7BDE /* ICarousel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6876C2BE1B72E771008C7BDE /* ICarousel.storyboard */; };
 		6876C2C31B72EF5F008C7BDE /* CylinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6876C2C21B72EF5F008C7BDE /* CylinderViewController.m */; };
@@ -201,6 +205,12 @@
 		686DFD421B6B173600D31E1F /* TransationIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransationIndexViewController.h; sourceTree = "<group>"; };
 		686DFD431B6B173600D31E1F /* TransationIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransationIndexViewController.m; sourceTree = "<group>"; };
 		686DFD451B6B175000D31E1F /* TransationAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransationAnimation.storyboard; sourceTree = "<group>"; };
+		68739C501CC9EB83009C6840 /* OtherAppEffectFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherAppEffectFollowViewController.h; sourceTree = "<group>"; };
+		68739C511CC9EB83009C6840 /* OtherAppEffectFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherAppEffectFollowViewController.m; sourceTree = "<group>"; };
+		68739C521CC9EB83009C6840 /* OtherAppEffectFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherAppEffectFollowViewController.xib; sourceTree = "<group>"; };
+		68739C551CC9EBBC009C6840 /* JianShuEffectFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JianShuEffectFollowViewController.h; sourceTree = "<group>"; };
+		68739C561CC9EBBC009C6840 /* JianShuEffectFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JianShuEffectFollowViewController.m; sourceTree = "<group>"; };
+		68739C571CC9EBBC009C6840 /* JianShuEffectFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JianShuEffectFollowViewController.xib; sourceTree = "<group>"; };
 		6876C2BB1B72E746008C7BDE /* IcarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcarouselViewController.h; sourceTree = "<group>"; };
 		6876C2BC1B72E746008C7BDE /* IcarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IcarouselViewController.m; sourceTree = "<group>"; };
 		6876C2BE1B72E771008C7BDE /* ICarousel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ICarousel.storyboard; sourceTree = "<group>"; };
@@ -577,6 +587,35 @@
 			path = transationIndex;
 			sourceTree = "<group>";
 		};
+		68739C4A1CC9EA8D009C6840 /* otherAppEffectFollow */ = {
+			isa = PBXGroup;
+			children = (
+				68739C4F1CC9EB77009C6840 /* appEffectFollowIndex */,
+				68739C4B1CC9EA8D009C6840 /* jianshu */,
+			);
+			path = otherAppEffectFollow;
+			sourceTree = "<group>";
+		};
+		68739C4B1CC9EA8D009C6840 /* jianshu */ = {
+			isa = PBXGroup;
+			children = (
+				68739C551CC9EBBC009C6840 /* JianShuEffectFollowViewController.h */,
+				68739C561CC9EBBC009C6840 /* JianShuEffectFollowViewController.m */,
+				68739C571CC9EBBC009C6840 /* JianShuEffectFollowViewController.xib */,
+			);
+			path = jianshu;
+			sourceTree = "<group>";
+		};
+		68739C4F1CC9EB77009C6840 /* appEffectFollowIndex */ = {
+			isa = PBXGroup;
+			children = (
+				68739C501CC9EB83009C6840 /* OtherAppEffectFollowViewController.h */,
+				68739C511CC9EB83009C6840 /* OtherAppEffectFollowViewController.m */,
+				68739C521CC9EB83009C6840 /* OtherAppEffectFollowViewController.xib */,
+			);
+			path = appEffectFollowIndex;
+			sourceTree = "<group>";
+		};
 		6876C2B91B72E6EA008C7BDE /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,6 +729,7 @@
 			isa = PBXGroup;
 			children = (
 				68CB740F1B140E5800A84206 /* main */,
+				68739C4A1CC9EA8D009C6840 /* otherAppEffectFollow */,
 				6876C2B91B72E6EA008C7BDE /* iCarousel */,
 				684A591A1B6F082300E3A75D /* calayer */,
 				684F4BCD1B6A1C86003A111E /* transationAnimation */,
@@ -879,6 +919,7 @@
 				68E029CA1C7D422B007635D1 /* HULuWaViewController.xib in Resources */,
 				684F4BC91B6A0139003A111E /* MyScalePopViewController.xib in Resources */,
 				6876C2BF1B72E771008C7BDE /* ICarousel.storyboard in Resources */,
+				68739C541CC9EB83009C6840 /* OtherAppEffectFollowViewController.xib in Resources */,
 				684F4BC31B6A0139003A111E /* PopBasicViewController.xib in Resources */,
 				68471DD61B706C83006B5A01 /* SinaPopViewController.xib in Resources */,
 				68DF3F431B5C936800504335 /* ZheDieViewController.xib in Resources */,
@@ -892,6 +933,7 @@
 				68471DD11B705FA0006B5A01 /* SinaPopViewDemoController.xib in Resources */,
 				684F4BCC1B6A0139003A111E /* ScalePopViewController.xib in Resources */,
 				68CB73EA1B14078300A84206 /* Images.xcassets in Resources */,
+				68739C591CC9EBBC009C6840 /* JianShuEffectFollowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,6 +991,7 @@
 				684F4B901B69D147003A111E /* UIView+MALFrame.m in Sources */,
 				684F4B9A1B69D147003A111E /* MALTextView.m in Sources */,
 				6876C2BD1B72E746008C7BDE /* IcarouselViewController.m in Sources */,
+				68739C581CC9EBBC009C6840 /* JianShuEffectFollowViewController.m in Sources */,
 				684F4BC41B6A0139003A111E /* PopIndexViewController.m in Sources */,
 				68084D5E1B6B5BF400D71C6E /* DissmissAnimation.m in Sources */,
 				686DFD3D1B6B16D400D31E1F /* PushCollectionViewCell.m in Sources */,
@@ -992,6 +1035,7 @@
 				684F4BCA1B6A0139003A111E /* PopDemoViewController.m in Sources */,
 				68CB73DF1B14078300A84206 /* main.m in Sources */,
 				6876C2C31B72EF5F008C7BDE /* CylinderViewController.m in Sources */,
+				68739C531CC9EB83009C6840 /* OtherAppEffectFollowViewController.m in Sources */,
 				68E029C91C7D422B007635D1 /* HULuWaViewController.m in Sources */,
 				68CB741A1B140E5800A84206 /* MainMenuViewController.m in Sources */,
 				684F4B8F1B69D147003A111E /* UIColor+MALColor.m in Sources */,

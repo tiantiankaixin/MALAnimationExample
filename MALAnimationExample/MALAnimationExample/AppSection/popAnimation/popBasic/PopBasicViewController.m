@@ -103,7 +103,7 @@
 {
     [self.testLabel pop_removeAllAnimations];
     POPBasicAnimation *anim = [POPBasicAnimation animation];
-    anim.duration = 10.0;
+    anim.duration = 20.0;
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     POPAnimatableProperty * prop = [POPAnimatableProperty propertyWithName:@"count" initializer:^(POPMutableAnimatableProperty *prop) {
         // read value
@@ -113,7 +113,10 @@
         };
         // write value
         prop.writeBlock = ^(id obj, const CGFloat values[]) {
-            [obj setText:[NSString stringWithFormat:@"%.2f",values[0]]];
+           
+            CGFloat value = values[0];
+            NSLog(@"-----------");
+            [obj setText:[NSString stringWithFormat:@"%.2f",value]];
         };
         // dynamics threshold
         prop.threshold = 0.01;

@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "YeguchengViewController.h"
+#import "OtherAppEffectFollowViewController.h"
 
 @interface MainViewController ()
 
@@ -32,6 +33,7 @@
     [self addARowWithClassName:@"TransationIndex" andTitle:@"转场动画" storyBoardName:@"TransationAnimation"];
      [self addARowWithClassName:@"CalyerIndex" andTitle:@"CALayer" storyBoardName:@"Calayer"];
     [self addARowWithClassName:@"carousel" andTitle:@"旋转木马" storyBoardName:@"ICarousel"];
+    [self addARowWithClassName:@"OtherAppEffectFollowViewController" andTitle:@"仿写的一些应用效果" isFromSB:NO];
 }
 
 - (void)didReceiveMemoryWarning {

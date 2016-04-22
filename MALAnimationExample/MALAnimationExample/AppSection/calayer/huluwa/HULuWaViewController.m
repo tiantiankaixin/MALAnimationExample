@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) CALayer *bgLayer;
 @property (nonatomic, strong) CALayer *moveLayer;
+@property (nonatomic, assign) BOOL isAnimation;
 
 @end
 
@@ -65,6 +66,7 @@
 
 - (IBAction)startAnimation:(id)sender
 {
+    self.isAnimation = YES;
     static CGFloat toV = 240;
     static CGFloat fromV = 80;
     if (toV == 240)
@@ -84,6 +86,33 @@
     base.fillMode = kCAFillModeForwards;
     base.removedOnCompletion = NO;
     [self.moveLayer addAnimation:base forKey:@"moveAnimation"];
+}
+
+- (IBAction)pause
+{
+    if (!self.isAnimation)
+    {
+        return;
+    }
+    self.isAnimation = NO;
+    CFTimeInterval interval = [self.moveLayer convertTime:CACurrentMediaTime() fromLayer:nil];
+    self.moveLayer.speed = 0;
+    self.moveLayer.timeOffset = interval;
+}
+
+- (IBAction)resume
+{
+    if (self.isAnimation)
+    {
+        return;
+    }
+    CFTimeInterval pausedTime = self.moveLayer.timeOffset;
+    self.isAnimation = YES;
+    self.moveLayer.speed = 1.0;
+    self.moveLayer.timeOffset = 0;
+    self.moveLayer.beginTime = 0;
+    CFTimeInterval timesincePause = [self.moveLayer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    self.moveLayer.beginTime = timesincePause;
 }
 
 - (void)didReceiveMemoryWarning

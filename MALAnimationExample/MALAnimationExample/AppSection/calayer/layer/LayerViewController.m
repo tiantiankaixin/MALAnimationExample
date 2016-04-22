@@ -28,8 +28,65 @@
 - (void)setUpView
 {
     [self setCenterItemWithTitle:@"CALayer"];
+    [self replicatorLayer];
     //[self gradLayer];
-    [self shapeLayer];
+    //[self shapeLayer];
+}
+
+#pragma mark - 复制图层
+- (void)replicatorLayer
+{
+//    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+//    replicatorLayer.bounds = CGRectMake(0, 0, 60, 60);
+//    replicatorLayer.position = self.view.center;
+//    replicatorLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
+//    [self.view.layer addSublayer:replicatorLayer];
+//    
+//    
+//    CALayer *bar = [CALayer layer];
+//    bar.bounds = CGRectMake(0, 0, 8.0, 40);
+//    bar.position = CGPointMake(10, 75);
+//    bar.cornerRadius = 2.0;
+//    bar.backgroundColor = [UIColor redColor].CGColor;
+//    [replicatorLayer addSublayer:bar];
+//    
+//    CABasicAnimation *move = [CABasicAnimation animationWithKeyPath:@"position.y"];
+//    move.toValue = @(bar.position.y - 35.0);
+//    move.duration = 0.5f;
+//    move.autoreverses = YES;
+//    move.repeatCount = MAXFLOAT;
+//    [bar addAnimation:move forKey:@"moveAnimation"];
+//    
+//    replicatorLayer.instanceCount = 3;
+//    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(20, 0, 0);
+//    replicatorLayer.instanceDelay = 0.33;
+//    replicatorLayer.masksToBounds = YES;
+//    replicatorLayer.backgroundColor = [UIColor clearColor].CGColor;
+    
+    
+    
+    CAReplicatorLayer *r = [CAReplicatorLayer layer];
+    r.bounds = CGRectMake(0, 0, 100, 15);
+    r.position = CGPointMake(100, 100);
+    r.backgroundColor = [UIColor clearColor].CGColor;
+    [self.view.layer addSublayer:r];
+    
+    CAShapeLayer *circle = [CAShapeLayer layer];
+    circle.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 10, 10)].CGPath;
+    circle.strokeColor = [UIColor redColor].CGColor;
+    circle.fillColor = [UIColor redColor].CGColor;
+    [r addSublayer:circle];
+    
+    CABasicAnimation *changeColor = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    changeColor.toValue = [NSNumber numberWithFloat:0.0];
+    changeColor.duration = 0.5f;
+    //changeColor.autoreverses = YES;
+    changeColor.repeatCount = MAXFLOAT;
+    [circle addAnimation:changeColor forKey:@"changeColor"];
+    
+    r.instanceCount = 3;
+    r.instanceTransform = CATransform3DMakeTranslation(20, 0, 0);
+    r.instanceDelay = 0.5;
 }
 
 #pragma mark - 渐变layer
