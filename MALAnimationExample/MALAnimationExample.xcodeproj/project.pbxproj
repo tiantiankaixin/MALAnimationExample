@@ -82,6 +82,8 @@
 		68CB74211B14102200A84206 /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB74201B14102200A84206 /* StartView.m */; };
 		68CB74251B14246400A84206 /* SImpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB74241B14246400A84206 /* SImpleViewController.m */; };
 		68CB74281B1440AE00A84206 /* LabelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB74271B1440AE00A84206 /* LabelScrollView.m */; };
+		68D9538C1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D9538A1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.m */; };
+		68D9538D1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68D9538B1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.xib */; };
 		68DF3F421B5C936800504335 /* ZheDieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF3F401B5C936800504335 /* ZheDieViewController.m */; };
 		68DF3F431B5C936800504335 /* ZheDieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68DF3F411B5C936800504335 /* ZheDieViewController.xib */; };
 		68E029C91C7D422B007635D1 /* HULuWaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E029C71C7D422B007635D1 /* HULuWaViewController.m */; };
@@ -241,6 +243,9 @@
 		68CB74241B14246400A84206 /* SImpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SImpleViewController.m; sourceTree = "<group>"; };
 		68CB74261B1440AE00A84206 /* LabelScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelScrollView.h; sourceTree = "<group>"; };
 		68CB74271B1440AE00A84206 /* LabelScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelScrollView.m; sourceTree = "<group>"; };
+		68D953891CCDB6E100B5231D /* UIViewAnimationWithViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationWithViewLayer.h; sourceTree = "<group>"; };
+		68D9538A1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationWithViewLayer.m; sourceTree = "<group>"; };
+		68D9538B1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIViewAnimationWithViewLayer.xib; sourceTree = "<group>"; };
 		68DF3F3F1B5C936800504335 /* ZheDieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZheDieViewController.h; sourceTree = "<group>"; };
 		68DF3F401B5C936800504335 /* ZheDieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZheDieViewController.m; sourceTree = "<group>"; };
 		68DF3F411B5C936800504335 /* ZheDieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZheDieViewController.xib; sourceTree = "<group>"; };
@@ -320,6 +325,7 @@
 				68EAA9001B732C38005075AE /* selectColor */,
 				68E029C51C7D4210007635D1 /* huluwa */,
 				681B59A91B7445A90012DA33 /* layer */,
+				68D953881CCDB6AD00B5231D /* uiviewAnimationWithViewLayer */,
 			);
 			path = calayer;
 			sourceTree = "<group>";
@@ -783,6 +789,16 @@
 			path = simpleAnimation;
 			sourceTree = "<group>";
 		};
+		68D953881CCDB6AD00B5231D /* uiviewAnimationWithViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				68D953891CCDB6E100B5231D /* UIViewAnimationWithViewLayer.h */,
+				68D9538A1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.m */,
+				68D9538B1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.xib */,
+			);
+			path = uiviewAnimationWithViewLayer;
+			sourceTree = "<group>";
+		};
 		68DF3F3E1B5C935800504335 /* zhedie */ = {
 			isa = PBXGroup;
 			children = (
@@ -933,6 +949,7 @@
 				68471DD11B705FA0006B5A01 /* SinaPopViewDemoController.xib in Resources */,
 				684F4BCC1B6A0139003A111E /* ScalePopViewController.xib in Resources */,
 				68CB73EA1B14078300A84206 /* Images.xcassets in Resources */,
+				68D9538D1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.xib in Resources */,
 				68739C591CC9EBBC009C6840 /* JianShuEffectFollowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1038,6 +1055,7 @@
 				68739C531CC9EB83009C6840 /* OtherAppEffectFollowViewController.m in Sources */,
 				68E029C91C7D422B007635D1 /* HULuWaViewController.m in Sources */,
 				68CB741A1B140E5800A84206 /* MainMenuViewController.m in Sources */,
+				68D9538C1CCDB6E100B5231D /* UIViewAnimationWithViewLayer.m in Sources */,
 				684F4B8F1B69D147003A111E /* UIColor+MALColor.m in Sources */,
 				684F4B981B69D147003A111E /* MALProgressView.m in Sources */,
 				686DFD3B1B6B16D400D31E1F /* PopAnimation.m in Sources */,

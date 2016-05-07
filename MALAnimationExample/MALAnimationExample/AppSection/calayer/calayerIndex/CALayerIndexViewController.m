@@ -38,6 +38,7 @@
     [self addARowWithClassName:@"layer" andTitle:@"layer" storyBoardName:@"Calayer"];
     [self addARowWithClassName:@"CircleScaleViewController" andTitle:@"按钮点击出光圈" isFromSB:NO];
     [self addARowWithClassName:@"HULuWaViewController" andTitle:@"葫芦娃效果" isFromSB:NO];
+    [self addARowWithClassName:@"UIViewAnimationWithViewLayer" andTitle:@"UIViewAnimation + UIView.layer" isFromSB:NO];
 }
 
 - (void)didReceiveMemoryWarning
