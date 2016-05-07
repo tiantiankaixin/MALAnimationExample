@@ -11,3 +11,8 @@
 @interface JianShuEffectFollowViewController : UIViewController
 
 @end
+
+
+@interface AnimationDelegate : NSObject
+
+@end

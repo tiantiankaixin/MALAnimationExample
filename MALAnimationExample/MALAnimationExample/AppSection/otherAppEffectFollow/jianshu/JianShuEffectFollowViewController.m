@@ -9,13 +9,14 @@
 #import "JianShuEffectFollowViewController.h"
 #import "UIView+MALFrame.h"
 
-static CFTimeInterval animationTime = 1.2f;
+static CFTimeInterval animationTime = 0.6f;
 
 @interface JianShuEffectFollowViewController ()
 
 @property (strong, nonatomic) IBOutlet UIView *bottomView;
 @property (nonatomic, strong) UIView *maskView;
 @property (nonatomic, strong) CAAnimationGroup *showAnimationGroup;
+@property (nonatomic, strong) AnimationDelegate *aniDelegate;
 
 @end
 
@@ -67,34 +68,38 @@ static CFTimeInterval animationTime = 1.2f;
 {
     //一、self.view上的动画
     //1、self.view沿x轴偏转一定角度并恢复
-    CAKeyframeAnimation *xRotaionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.x"];
-    xRotaionAnimation.values = @[[NSNumber numberWithFloat:0.0],[NSNumber numberWithFloat:M_PI_2 / 12],[NSNumber numberWithFloat:0.0]];
-    xRotaionAnimation.duration = animationTime;
+//    CAKeyframeAnimation *xRotaionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.x"];
+//    xRotaionAnimation.values = @[[NSNumber numberWithFloat:0.0],[NSNumber numberWithFloat:M_PI_2 / 12],[NSNumber numberWithFloat:0.0]];
+//    xRotaionAnimation.duration = animationTime / 2;
     
     //2、self.view x缩放
-    CABasicAnimation *xScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.x"];
-    xScaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
-    xScaleAnimation.toValue = [NSNumber numberWithFloat:0.85];
-    xScaleAnimation.duration = animationTime;
-    
-    //y缩放
-    CABasicAnimation *yScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
-    yScaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
-    yScaleAnimation.toValue = [NSNumber numberWithFloat:0.98];
-    yScaleAnimation.duration = animationTime;
+//    CABasicAnimation *xScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.x"];
+//    xScaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+//    xScaleAnimation.toValue = [NSNumber numberWithFloat:0.85];
+//    xScaleAnimation.duration = animationTime / 2;
+//    xScaleAnimation.beginTime = animationTime / 2;
+//    
+//    //y缩放
+//    CABasicAnimation *yScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
+//    yScaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+//    yScaleAnimation.toValue = [NSNumber numberWithFloat:0.98];
+//    yScaleAnimation.duration = animationTime / 2;
+//    yScaleAnimation.beginTime = animationTime / 2;
     
     //3、z层级改变
 //    CABasicAnimation *zAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translate.z"];
 //    zAnimation.toValue = [NSNumber numberWithFloat:-30];
 //    zAnimation.duration = animationTime;//没卵用
-    
-    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
-    group.animations = @[xRotaionAnimation, xScaleAnimation, yScaleAnimation];
-    group.duration = animationTime;
-    [self.navigationController.view.layer addAnimation:group forKey:@"groupAnimation"];
-    //[self.navigationController.view.layer setTransform:CATransform3DScale(self.navigationController.view.layer.transform, 0.85, 0.98, 0)];
-    group.delegate = self;
-    self.showAnimationGroup = group;
+//    
+//    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
+//    group.animations = @[xRotaionAnimation, xScaleAnimation, yScaleAnimation];
+//    group.duration = animationTime;
+//    [self.navigationController.view.layer addAnimation:group forKey:@"groupAnimation"];
+   // self.navigationController.view.transform = CGAffineTransformMakeScale(0.85, 0.98);
+//    AnimationDelegate *animation = [[AnimationDelegate alloc] init];
+//    group.delegate = animation;
+//    self.showAnimationGroup = group;
+//    self.aniDelegate = animation;
    
     //4、视图下方一个view弹出
     UIView *naviSuper = self.navigationController.view.superview;
@@ -108,7 +113,7 @@ static CFTimeInterval animationTime = 1.2f;
         [naviSuper insertSubview:self.maskView belowSubview:self.bottomView];
     }
     [self.bottomView setViewY:SCREEN_HEIGHT];
-    [UIView animateWithDuration:animationTime animations:^{
+    [UIView animateWithDuration:animationTime delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
         
         self.bottomView.layer.shadowOffset = CGSizeMake(0, -2);
         self.bottomView.layer.shadowColor = [UIColor lightGrayColor].CGColor;
@@ -116,19 +121,14 @@ static CFTimeInterval animationTime = 1.2f;
         self.bottomView.layer.shadowOpacity = 0.6;
         [self.bottomView setViewY:SCREEN_HEIGHT - HEIGHT(self.bottomView)];
         self.maskView.alpha = 0.5;
+        self.navigationController.view.transform = CGAffineTransformMakeScale(0.85, 0.98);
         
-    } completion:^(BOOL finished) {
-        
-        if(finished)
-        {
-            
-        }
-    }];
+    } completion:nil];
 }
 
 - (void)hiddenAnimation
 {
-    self.navigationController.view.layer.transform = CATransform3DIdentity;
+    //self.navigationController.view.layer.transform = CATransform3DIdentity;
     //一、self.view上的动画
     //1、self.view沿x轴偏转一定角度并恢复
     CAKeyframeAnimation *xRotaionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.x"];
@@ -136,34 +136,43 @@ static CFTimeInterval animationTime = 1.2f;
     xRotaionAnimation.duration = animationTime;
     
     //2、self.view x缩放
-    CABasicAnimation *xScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.x"];
-    xScaleAnimation.fromValue = [NSNumber numberWithFloat:0.85];
-    xScaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
-    xScaleAnimation.duration = animationTime;
-    
-    CABasicAnimation *yScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
-    yScaleAnimation.fromValue = [NSNumber numberWithFloat:0.98];
-    yScaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
-    yScaleAnimation.duration = animationTime;
+//    CABasicAnimation *xScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.x"];
+//    xScaleAnimation.fromValue = [NSNumber numberWithFloat:0.85];
+//    xScaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
+//    xScaleAnimation.duration = animationTime;
+//    
+//    CABasicAnimation *yScaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
+//    yScaleAnimation.fromValue = [NSNumber numberWithFloat:0.98];
+//    yScaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
+//    yScaleAnimation.duration = animationTime;
     
     CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
-    group.animations = @[xScaleAnimation, yScaleAnimation];
+    group.animations = @[xRotaionAnimation];
     group.duration = animationTime;
-    [self.navigationController.view.layer addAnimation:group forKey:@"groupHiddenAnimation"];
+    //[self.navigationController.view.layer addAnimation:group forKey:@"groupHiddenAnimation"];
     
     //3、视图下方弹出的view隐藏, 蒙层移除
     [UIView animateWithDuration:animationTime animations:^{
         
         [self.bottomView setViewY:SCREEN_HEIGHT];
         self.maskView.alpha = 0.0;
-    } completion:^(BOOL finished) {
+        self.navigationController.view.transform = CGAffineTransformMakeScale(1.0, 1.0);
         
-        if (finished)
-        {
-            self.navigationController.view.layer.transform = CATransform3DIdentity;
-        }
-    }];
+    } completion:nil];
 }
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+@end
+
+
+@implementation AnimationDelegate
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
@@ -175,11 +184,5 @@ static CFTimeInterval animationTime = 1.2f;
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 @end
+
