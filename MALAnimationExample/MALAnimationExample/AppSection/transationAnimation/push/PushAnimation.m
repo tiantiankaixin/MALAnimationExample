@@ -25,8 +25,9 @@
     UIView *container = [transitionContext containerView];
     
     PushCollectionViewCell *cell = (PushCollectionViewCell *)[from.collectionView cellForItemAtIndexPath:from.selectIndexPath];
-    UIView *iconSnap = [cell.icon snapshotViewAfterScreenUpdates:NO];
+    UIImageView *iconSnap = [[UIImageView alloc] init];
     iconSnap.frame = [container convertRect:cell.icon.frame fromView:cell];
+    iconSnap.image = cell.icon.image;
     cell.icon.hidden = YES;
     
     to.view.frame = [transitionContext finalFrameForViewController:to];
@@ -39,7 +40,7 @@
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
         to.view.alpha = 1.0;
-        iconSnap.frame = to.targetImageView.frame;
+        iconSnap.frame = [to targetFrame];
         
     } completion:^(BOOL finished){
         

@@ -11,4 +11,6 @@
 @interface ToViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *targetImageView;
 
+- (CGRect)targetFrame;
+
 @end

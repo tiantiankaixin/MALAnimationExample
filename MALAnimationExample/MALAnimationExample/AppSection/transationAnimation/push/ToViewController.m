@@ -17,6 +17,11 @@
 
 @implementation ToViewController
 
+- (CGRect)targetFrame
+{
+    return CGRectMake(SCREEN_WIDTH / 2 - WIDTH(self.targetImageView) / 2, 90, 216, 206);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

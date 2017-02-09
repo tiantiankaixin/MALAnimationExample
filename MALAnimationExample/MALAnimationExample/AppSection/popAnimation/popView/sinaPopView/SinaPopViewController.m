@@ -229,7 +229,6 @@
     }
     else
     {
-        NSMutableArray *now;
         if ([self.sinaPopDelegate respondsToSelector:@selector(menuItemClickWithModel:)])
         {
             [self.sinaPopDelegate menuItemClickWithModel:model];
