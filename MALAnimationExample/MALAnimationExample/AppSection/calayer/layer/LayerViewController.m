@@ -57,14 +57,14 @@
 //    move.repeatCount = MAXFLOAT;
 //    [bar addAnimation:move forKey:@"moveAnimation"];
 //    
-//    replicatorLayer.instanceCount = 3;
+//    replicatorLayer.instanceCount = 2;
 //    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(20, 0, 0);
-//    replicatorLayer.instanceDelay = 0.33;
+//    replicatorLayer.instanceDelay = 0.5f;
 //    replicatorLayer.masksToBounds = YES;
 //    replicatorLayer.backgroundColor = [UIColor clearColor].CGColor;
     
     
-    
+//    
     CAReplicatorLayer *r = [CAReplicatorLayer layer];
     r.bounds = CGRectMake(0, 0, 100, 15);
     r.position = CGPointMake(100, 100);
@@ -80,13 +80,13 @@
     CABasicAnimation *changeColor = [CABasicAnimation animationWithKeyPath:@"opacity"];
     changeColor.toValue = [NSNumber numberWithFloat:0.0];
     changeColor.duration = 0.5f;
-    //changeColor.autoreverses = YES;
+    changeColor.autoreverses = YES;
     changeColor.repeatCount = MAXFLOAT;
     [circle addAnimation:changeColor forKey:@"changeColor"];
     
-    r.instanceCount = 3;
+    r.instanceCount = 5;
     r.instanceTransform = CATransform3DMakeTranslation(20, 0, 0);
-    r.instanceDelay = 0.5;
+    r.instanceDelay = 0.3;
 }
 
 #pragma mark - 渐变layer
