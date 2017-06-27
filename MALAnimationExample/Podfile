@@ -1,9 +1,15 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, ‘7.0’
+target 'MALAnimationExample' do
+
 pod 'pop', '~> 1.0.7'
 pod 'GPUImage', '~> 0.1.6'
 pod 'iCarousel', '~> 1.8.1'
 pod 'SOZOChromoplast', '~> 0.0.2'
+pod 'NetMonitor', :podspec => 'https://github.com/tiantiankaixin/NetMonitor/blob/master/NetMonitor.podspec'
+
+
+end
 
 
 

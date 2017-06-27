@@ -1,1 +1,0 @@
-../../../SOZOChromoplast/SOZOChromoplast/SOZOBitmapDataGenerator.h
