@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CHGlobalSingleton.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [CHGlobalSingleton startNetMonitoring];
     return YES;
 }
 

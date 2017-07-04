@@ -88,6 +88,7 @@
 		68EAA8F61B73299D005075AE /* Calayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EAA8F51B73299D005075AE /* Calayer.storyboard */; };
 		68EAA8FF1B732BBA005075AE /* CALayerIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EAA8FE1B732BBA005075AE /* CALayerIndexViewController.m */; };
 		68EAA9031B732C4E005075AE /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EAA9021B732C4E005075AE /* SelectorViewController.m */; };
+		F7AAEFCA706D3BF72429231A /* libPods-MALAnimationExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DF1FA28D7C961234DB9CE /* libPods-MALAnimationExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E687CCE3281BECF77896FDC /* Pods-MALAnimationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MALAnimationExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MALAnimationExample/Pods-MALAnimationExample.debug.xcconfig"; sourceTree = "<group>"; };
 		68084D531B6B4F0600D71C6E /* PresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentAnimation.h; sourceTree = "<group>"; };
 		68084D541B6B4F0600D71C6E /* PresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimation.m; sourceTree = "<group>"; };
 		68084D561B6B4F6100D71C6E /* PFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFromViewController.h; sourceTree = "<group>"; };
@@ -249,6 +251,8 @@
 		68EAA8FE1B732BBA005075AE /* CALayerIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerIndexViewController.m; sourceTree = "<group>"; };
 		68EAA9011B732C4E005075AE /* SelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
 		68EAA9021B732C4E005075AE /* SelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
+		983DF1FA28D7C961234DB9CE /* libPods-MALAnimationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MALAnimationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06482E273F9EDA054EB18DE /* Pods-MALAnimationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MALAnimationExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MALAnimationExample/Pods-MALAnimationExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AAEFCA706D3BF72429231A /* libPods-MALAnimationExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +274,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A446D2606E35400C81354BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				983DF1FA28D7C961234DB9CE /* libPods-MALAnimationExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		681B59A91B7445A90012DA33 /* layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +660,8 @@
 				68CB73DB1B14078300A84206 /* MALAnimationExample */,
 				68CB73F51B14078300A84206 /* MALAnimationExampleTests */,
 				68CB73DA1B14078300A84206 /* Products */,
+				99B16823F7FAFDAD230B3A8A /* Pods */,
+				0A446D2606E35400C81354BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -807,6 +822,15 @@
 			path = selectColor;
 			sourceTree = "<group>";
 		};
+		99B16823F7FAFDAD230B3A8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E687CCE3281BECF77896FDC /* Pods-MALAnimationExample.debug.xcconfig */,
+				F06482E273F9EDA054EB18DE /* Pods-MALAnimationExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -814,9 +838,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68CB73FC1B14078300A84206 /* Build configuration list for PBXNativeTarget "MALAnimationExample" */;
 			buildPhases = (
+				EF71533B5174834531BE682D /* [CP] Check Pods Manifest.lock */,
 				68CB73D51B14078300A84206 /* Sources */,
 				68CB73D61B14078300A84206 /* Frameworks */,
 				68CB73D71B14078300A84206 /* Resources */,
+				583DA456CC8F7DA30A59A3AF /* [CP] Embed Pods Frameworks */,
+				3407D588CA913C6FD3DEA700 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -919,6 +946,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3407D588CA913C6FD3DEA700 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MALAnimationExample/Pods-MALAnimationExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		583DA456CC8F7DA30A59A3AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MALAnimationExample/Pods-MALAnimationExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF71533B5174834531BE682D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68CB73D51B14078300A84206 /* Sources */ = {
@@ -1108,6 +1183,7 @@
 		};
 		68CB73FD1B14078300A84206 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E687CCE3281BECF77896FDC /* Pods-MALAnimationExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1124,6 +1200,7 @@
 		};
 		68CB73FE1B14078300A84206 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06482E273F9EDA054EB18DE /* Pods-MALAnimationExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
